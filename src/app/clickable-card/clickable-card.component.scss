@@ -1,0 +1,17 @@
+:host {
+  display: block;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title,
+.card-subtitle {
+  text-align: center;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}

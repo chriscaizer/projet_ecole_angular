@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  background-color: #364F6B;
+  color: white;
+  padding: 10px;
+}

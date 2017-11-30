@@ -1,0 +1,33 @@
+<article class="card">
+  <a href="mater.html">          
+    <div class="card-body">
+      <h3 class="card-title">
+        {{data.title | uppercase}}
+      </h3>
+      <div class="card-text">
+        <ul class="no-bullet no-padding top-buffer">
+          <li>
+            <strong>Direction</strong>
+            <ul class="no-bullet">
+              <li>{{data.directionName | titlecase}}</li>
+              <li>
+                <i class="fa fa-phone"></i> {{data.directionTel}}
+              </li>
+              <li>
+                <i class="fa fa-envelope-o"></i> {{data.directionMail}}
+              </li>
+            </ul>
+          </li>
+          <li class="top-buffer">
+            <strong>Parents élèves</strong>
+            <ul class="no-bullet">
+              <li>
+                <i class="fa fa-envelope-o"></i> {{data.parentMail}}
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </a>
+</article>
