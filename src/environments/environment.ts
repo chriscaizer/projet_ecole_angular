@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  wordpress_url:'http://localhost/wordpress/wp-json/wp/v2'
+  wordpress_url:'https://gregoryklein.io/wp-json/wp/v2'
 };

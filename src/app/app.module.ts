@@ -11,6 +11,10 @@ import { ClickableCardComponent } from './clickable-card/clickable-card.componen
 import { NewsContainerComponent } from './news-container/news-container.component';
 import { NewsComponent } from './news/news.component';
 import { WordpressService } from './services/wordpress.service';
+import { MainPageComponent } from './main-page/main-page.component';
+import { MaterPageComponent } from './mater-page/mater-page.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ClassCardComponent } from './mater-page/class-card/class-card.component';
 
 
 @NgModule({
@@ -21,11 +25,15 @@ import { WordpressService } from './services/wordpress.service';
     ShadowSectionBackgroundComponent,
     ClickableCardComponent,
     NewsContainerComponent,
-    NewsComponent
+    NewsComponent,
+    MainPageComponent,
+    MaterPageComponent,
+    ClassCardComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [
     WordpressService

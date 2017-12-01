@@ -1,0 +1,32 @@
+<article class="card col-4 mx-2">
+  <a [routerLink]="data.link">          
+    <div class="card-body">
+      <h3 class="card-title">
+        {{data.title}}
+      </h3>
+      <h6 class="card-subtitle text-muted">{{data.subtitle}}</h6>
+      <div class="card-text">
+        <ul class="no-bullet no-padding top-buffer">
+          <li>
+            <strong>Enseignant(s)</strong>
+            <ul class="no-bullet">
+              <li *ngFor="let teacher of data.teachers" >{{teacher}}</li>
+            </ul>
+          </li>
+          <li>
+            <strong>ATSEM</strong>
+            <ul class="no-bullet">
+              <li>Mme ---- Nadine</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Effectif</strong>
+            <ul class="no-bullet">
+              <li>24 élèves</li>
+            </ul>
+          </li>                         
+        </ul>
+      </div>
+    </div>
+  </a>
+</article>

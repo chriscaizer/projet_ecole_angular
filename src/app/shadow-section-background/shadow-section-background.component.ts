@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-shadow-section-background',
@@ -7,21 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShadowSectionBackgroundComponent implements OnInit {
 
-  mater = {
-    title: 'maternelle',
-    directionName: 'mme carre christine',
-    directionTel: '05 61 97 37 54',
-    directionMail: 'ce.0312487k@ac-toulouse.fr',
-    parentMail: 'dpemater@gmail.com'
-  };
-
-  elem = {
-    title: 'élémentaire',
-    directionName: 'mme turroc suzanna',
-    directionTel: '05 61 87 04 51',
-    directionMail: 'ce.0310556l@ac-toulouse.fr',
-    parentMail: 'dpeelem@gmail.com'
-  };
+  @Input() cards;
 
   constructor() { }
 
